@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            left: 50%;
+            top: 48vh;
+            transform: translate(-50%, -50%);
+            width: 25vw;
+            height: 40vh;
+            background-color: black;
+        }
+        
+        .box1 {
+            width: 5vw;
+            height: 15vh;
+            background-color: #ffbcbc;
+            position: absolute;
+            bottom: 0;
+            left: 2.5vw;
+            transition: height 2s;
+            animation-name: anim1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes anim1 {
+            0% {
+                height: 0vh;
+            }
+            50% {
+                height: 40vh;
+            }
+            100% {
+                height: 0vh;
+            }
+        }
+        
+        .box2 {
+            width: 5vw;
+            height: 40vh;
+            position: absolute;
+            bottom: 0;
+            background-color: #4cd3c2;
+            left: 7.5vw;
+            transition: height 2s;
+            animation-name: anim1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        .box3 {
+            width: 5vw;
+            height: 30vh;
+            position: absolute;
+            bottom: 0;
+            background-color: #ff6363;
+            left: 12.5vw;
+            transition: height 2s;
+            animation-name: anim1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        .box4 {
+            width: 5vw;
+            height: 15vh;
+            position: absolute;
+            bottom: 0;
+            background-color: #ffbd69;
+            left: 17.5vw;
+            transition: height 2s;
+            animation-name: anim1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        
+        body {
+            margin: 0;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body onload="anim">
+    <div class="container">
+        <div class="box1" id="box1"></div>
+        <div class="box2" id="box2"></div>
+        <div class="box3" id="box3"></div>
+        <div class="box4" id="box4"></div>
+    </div>
+
+
+<script>
+	var elem = document.getElementByTagName("body");
+	var id = setTimeout(change(),5000);
+	function change()
+	{
+		elem.style.backgroundColor = "red";
+	}
+
+</script>
+</body>
+
+</html>

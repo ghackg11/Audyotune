@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(images/bgmain.jpeg);
+}
+
+.navigation {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+}
+
+.sidenav {
+    width: 7%;
+    height: 90%;
+    background-color: #3a3535;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+}
+
+.sidesec {
+    width: 0%;
+    height: 90%;
+    background-color: #bbb0b0;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    overflow: auto;
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transition: width 0.1s; */
+}
+
+.maincontent {
+    position: absolute;
+    width: 93%;
+    height: 90%;
+    background-color: #3a3535;
+    left: 7%;
+    top: 10%;
+    background-image: url('images/bgmain.jpeg');
+    background-size: 100%;
+    transition: width 0.5s;
+}
+
+#arrow {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+}
+
+.mainframe {
+    width: 100%;
+    height: 100%;
+}
+
+.imagecontainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 2vh;
+    position: relative;
+}
+
+.imagecontainer img {
+    width: 60%;
+    position: relative;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    transition: background-color 1s;
+}
+
+.imagecontainer img:hover {
+    opacity: 0.5;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    width: 80%;
+    position: relative;
+    height: 30vh;
+    background-color: #3a3535;
+    left: 50%;
+    transform: translateX(-48%);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 2px solid black;
+}
+
+#img11,
+#img12,
+#img13,
+#img14,
+#img15,
+#img16 {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+#img11:hover,
+#img12:hover,
+#img13:hover,
+#img14:hover,
+#img15:hover,
+#img16:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+.navigation img {
+    width: 10vh;
+    position: absolute;
+    left: 42%;
+}
+
+.navigation span {
+    color: white;
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 6vh;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.imagebox {
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 8vh;
+    transform: translateX(-50%);
+    background-color: black;
+    border: 2px solid orange;
+    transition: width 1s, height 1s;
+}
+
+.imagebox:hover {
+    width: 45vw;
+    height: 53vh;
+}
+
+.songname {
+    top: 64vh;
+    position: absolute;
+    /* left: 70%;
+    transform: translateX(-50%); */
+    text-align: center;
+    font-weight: bold;
+    font-size: 6vh;
+    color: white;
+    font-family: 'Monda', sans-serif;
+    width: 100%;
+}
+
+marquee {
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 73vh;
+    font-size: large;
+    color: white;
+    font-family: 'Monda', sans-serif;
+}
+
+audio {
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45vw;
+}
+
+.whatsapp,
+.fb,
+.insta {
+    width: 14vw;
+    height: 7vh;
+    position: absolute;
+    right: -10vw;
+    float: right;
+    color: white;
+    transition: right 2s;
+    font-family: fantasy;
+    /* opacity: 0.5;*/
+}
+
+.whatsapp {
+    top: 20vh;
+}
+
+.fb {
+    top: 28vh;
+}
+
+.insta {
+    top: 36vh;
+}
+
+.whatsapp:hover {
+    right: 0;
+}
+
+.fb:hover {
+    right: 0;
+}
+
+.insta:hover {
+    right: 0;
+}
+
+.whatsapp img,
+.fb img,
+.insta img {
+    width: 6vh;
+    top: 0.5vh;
+    left: 0.5vh;
+    position: absolute;
+}
+
+.whatsapp span,
+.fb span,
+.insta span {
+    position: absolute;
+    left: 9vh;
+    top: 2vh;
+}
+
+#container11 {
+    position: absolute;
+    left: 50%;
+    top: 48vh;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 40vh;
+    display: block;
+}
+
+.box1 {
+    width: 5vw;
+    height: 15vh;
+    background-color: #f8b195;
+    position: absolute;
+    bottom: 0;
+    left: 2.5vw;
+    transition: height 2s;
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        height: 0vh;
+    }
+    50% {
+        height: 40vh;
+    }
+    100% {
+        height: 0vh;
+    }
+}
+
+.box2 {
+    width: 5vw;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #f67280;
+    left: 7.5vw;
+    transition: height 2s;
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.box3 {
+    width: 5vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #c06c84;
+    left: 12.5vw;
+    transition: height 2s;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.box4 {
+    width: 5vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #6c567b;
+    left: 17.5vw;
+    transition: height 2s;
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#mydiv {
+    visibility: hidden;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    box-shadow: 5px 5px 10px black;
+}
