@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-image: url(images/bgmain1.jpeg);
+            background-size: 100%;
+        }
+        
+        .navigation {
+            background-color: black;
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            top: 0;
+        }
+        
+        .navigation img {
+            width: 10vh;
+            position: absolute;
+            left: 39%;
+        }
+        
+        .navigation span {
+            color: white;
+            position: absolute;
+            left: 44%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 6vh;
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        .formbox {
+            border: 2px solid white;
+            opacity: 0.7;
+            width: 25vw;
+            height: 80vh;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -45%);
+            top: 50%;
+            border-radius: 3vw;
+            background-color: #3a3535;
+        }
+        
+        #header {
+            position: absolute;
+            color: white;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 2vh;
+            font-size: 3vw;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        
+        form {
+            position: absolute;
+            top: 20vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        form span {
+            position: absolute;
+            font-family: 'Titillium Web', sans-serif;
+            left: 50%;
+            color: white;
+            transform: translateX(-50%);
+        }
+        
+        form input {
+            margin: 15px;
+            border: none;
+            background-color: transparent;
+            color: #ff7315;
+            padding-bottom: 10px;
+            text-align: center;
+            border-bottom: 2px solid #ff7315;
+        }
+        
+        button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60vh;
+            border-radius: 0;
+            width: 15vh;
+            height: 5vh;
+            border: none;
+            background-color: aliceblue;
+        }
+        
+        button:hover {
+            color: #ff7315;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <img src="images/logo.png" alt="logo" id="logo">
+        <span>Audyotune</span>
+    </nav>
+    <div class="formbox">
+        <span id="header">Sign-Up</span>
+        <form name="signupform">
+            <span>Name:</span>
+            <br>
+            <input type="text" name="fname" required><br>
+            <span>Email id:</span><br>
+            <input type="email" name="femail" required><br>
+            <span>Password:</span><br>
+            <input type="password" name="fpassword" required>
+        </form>
+        <button type="submit" onclick="validate()">Submit</button>
+    </div>
+
+    <script src="signupjs.js"></script>
+
+</body>
+
+</html>
