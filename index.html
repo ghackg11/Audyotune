@@ -8,12 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-image: url("images/complete.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
         .btn {
             width: 13vw;
             height: 10vh;
@@ -21,7 +15,7 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: 70vh;
+            top: 75vh;
             font-size: 1.5vw;
             border: 2px solid orangered;
             transition: width 1s, height 1s, font-size 1s, top 1s;
@@ -31,10 +25,10 @@
             width: 14vw;
             font-size: 1.7vw;
             height: 12vh;
-            top: 68.5vh;
+            top: 70vh;
         }
         
-        a {
+        #a {
             position: absolute;
             color: black;
             text-decoration: none;
@@ -53,13 +47,55 @@
             top: 60vh;
             font-size: larger;
         }
+        
+        .grp {
+            position: absolute;
+            right: 10vh;
+            top: 5vh;
+        }
+        
+        #signup {
+            font-family: 'Titillium Web', sans-serif;
+            margin: 20px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid;
+            padding-bottom: 10px;
+            font-size: larger;
+        }
+        
+        #login {
+            font-family: 'Titillium Web', sans-serif;
+            margin: 20px;
+            color: white;
+            font-size: larger;
+            text-decoration: none;
+            border-bottom: 2px solid;
+            padding-bottom: 10px;
+        }
+        
+        #back {
+            width: 100%;
+        }
+        
+        body {
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
     <p>Lets dive into another world of music together</p>
 
-    <div class="btn"><a href="mainpage.html">Play Now</a></div>
+    <div class="btn"><a id="a" href="mainpage.html">Play Now</a></div>
+    <div class="grp">
+        <a href="signup.html" id="signup">Sign-Up</a>
+        <a href="login.html" id="login">Login</a>
+    </div>
+
+    <img src="images/complete.png" usemap="#image-map" id="back">
+    <map name="image-map">
+        <area target="" alt="" title="" href="aboutus.html" coords="180,129,1047,411" shape="rect">    </map>
 </body>
 
 </html>
